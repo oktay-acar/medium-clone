@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Oktay Acar" />
+    <title>Medium Homepage Clone</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <!-- Font Awesome 6.6.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap 5.3.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Internal -->
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <div
+      class="border-bottom border-dark fixed-top py-1"
+      style="background-color: #ffc000"
+    >
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand fs-3" href="#"><strong>Medium</strong></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our Story</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Membership</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Write</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="btn btn-dark text-light rounded-pill ms-lg-3"
+                    type="submit"
+                  >
+                    Get Started
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Heading Start -->
+    <div
+      class="border-bottom border-dark py-5 my-5"
+      style="background-color: #ffc000"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h1 class="display-1 fw-semibold">Human stories & ideas</h1>
+            <p class="lead">
+              A place to read, write, and deepen your understanding
+            </p>
+            <a
+              class="btn btn-dark text-light rounded-pill"
+              href="#"
+              role="button"
+              >Start reading</a
+            >
+          </div>
+          <div class="col-6">
+            <img
+              src="https://picsum.photos/id/140/300"
+              class="rounded-circle float-end"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Heading End -->
+
+    <!-- Article Start -->
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-12 mb-2">
+          <h6 class="text-uppercase">
+            <i class="fa-solid fa-arrow-trend-up text-success fs-5"></i>
+            <small class="ms-2">Trending on Medium</small>
+          </h6>
+        </div>
+
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">01</h6>
+            </div>
+
+            <div class="col-11">
+              <img
+                class="rounded-circle"
+                src="https://picsum.photos/id/1/25/25"
+                alt=""
+              />
+              <span class="small ms-1">John Doe</span>
+              <h6 class="mt-2">
+                <strong>Lorem ipsum dolor sit amet consectetur</strong>
+              </h6>
+
+              <ul class="list-inline small">
+                <li class="list-inline-item">Dec 1</li>
+                <li class="list-inline-item">.</li>
+                <li class="list-inline-item">6 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-regular fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">02</h6>
+            </div>
+
+            <div class="col-11">
+              <img
+                class="rounded-circle"
+                src="https://picsum.photos/id/2/25/25"
+                alt=""
+              />
+              <span class="small ms-1">John Doe</span>
+              <h6 class="mt-2">
+                <strong>Lorem ipsum dolor sit amet consectetur</strong>
+              </h6>
+
+              <ul class="list-inline small">
+                <li class="list-inline-item">Dec 2</li>
+                <li class="list-inline-item">.</li>
+                <li class="list-inline-item">5 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-regular fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">03</h6>
+            </div>
+
+            <div class="col-11">
+              <img
+                class="rounded-circle"
+                src="https://picsum.photos/id/3/25/25"
+                alt=""
+              />
+              <span class="small ms-1">John Doe</span>
+              <h6 class="mt-2">
+                <strong>Lorem ipsum dolor sit amet consectetur</strong>
+              </h6>
+
+              <ul class="list-inline small">
+                <li class="list-inline-item">Dec 3</li>
+                <li class="list-inline-item">.</li>
+                <li class="list-inline-item">6 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-regular fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">04</h6>
+            </div>
+
+            <div class="col-11">
+              <img
+                class="rounded-circle"
+                src="https://picsum.photos/id/4/25/25"
+                alt=""
+              />
+              <span class="small ms-1">John Doe</span>
+              <h6 class="mt-2">
+                <strong>Lorem ipsum dolor sit amet consectetur</strong>
+              </h6>
+
+              <ul class="list-inline small">
+                <li class="list-inline-item">Dec 4</li>
+                <li class="list-inline-item">.</li>
+                <li class="list-inline-item">5 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-regular fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">05</h6>
+            </div>
+
+            <div class="col-11">
+              <img
+                class="rounded-circle"
+                src="https://picsum.photos/id/5/25/25"
+                alt=""
+              />
+              <span class="small ms-1">John Doe</span>
+              <h6 class="mt-2">
+                <strong>Lorem ipsum dolor sit amet consectetur</strong>
+              </h6>
+
+              <ul class="list-inline small">
+                <li class="list-inline-item">Dec 5</li>
+                <li class="list-inline-item">.</li>
+                <li class="list-inline-item">6 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-regular fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">06</h6>
+            </div>
+
+            <div class="col-11">
+              <img
+                class="rounded-circle"
+                src="https://picsum.photos/id/6/25/25"
+                alt=""
+              />
+              <span class="small ms-1">John Doe</span>
+              <h6 class="mt-2">
+                <strong>Lorem ipsum dolor sit amet consectetur</strong>
+              </h6>
+
+              <ul class="list-inline small">
+                <li class="list-inline-item">Dec 6</li>
+                <li class="list-inline-item">.</li>
+                <li class="list-inline-item">5 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-regular fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- Article End -->
+
+    <!-- Section & Aside Start -->
+    <div class="border-top border-light-subtle">
+      <div class="container">
+        <div class="row mt-5">
+          <section class="col-sm-8 mb-5">
+            <article class="row mb-3">
+              <div class="col-8">
+                <img
+                  class="rounded-circle"
+                  src="https://picsum.photos/id/10/25/25"
+                  alt=""
+                />
+                <span class="small ms-1">John Doe</span>
+                <h6 class="mt-2">
+                  <strong>Lorem ipsum dolor sit amet consectetur</strong>
+                </h6>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perferendis, quod? Voluptate non ducimus consequuntur.
+                </p>
+                <ul class="list-inline small">
+                  <li class="list-inline-item">Dec 1</li>
+                  <li class="list-inline-item">.</li>
+                  <li class="list-inline-item">6 min read</li>
+                  <li class="list-inline-item">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://picsum.photos/id/10/400/250"
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+            </article>
+
+            <article class="row mb-3">
+              <div class="col-8">
+                <img
+                  class="rounded-circle"
+                  src="https://picsum.photos/id/11/25/25"
+                  alt=""
+                />
+                <span class="small ms-1">John Doe</span>
+                <h6 class="mt-2">
+                  <strong>Lorem ipsum dolor sit amet consectetur</strong>
+                </h6>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perferendis, quod? Voluptate non ducimus consequuntur.
+                </p>
+                <ul class="list-inline small">
+                  <li class="list-inline-item">Dec 1</li>
+                  <li class="list-inline-item">.</li>
+                  <li class="list-inline-item">6 min read</li>
+                  <li class="list-inline-item">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://picsum.photos/id/11/400/250"
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+            </article>
+
+            <article class="row mb-3">
+              <div class="col-8">
+                <img
+                  class="rounded-circle"
+                  src="https://picsum.photos/id/12/25/25"
+                  alt=""
+                />
+                <span class="small ms-1">John Doe</span>
+                <h6 class="mt-2">
+                  <strong>Lorem ipsum dolor sit amet consectetur</strong>
+                </h6>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perferendis, quod? Voluptate non ducimus consequuntur.
+                </p>
+                <ul class="list-inline small">
+                  <li class="list-inline-item">Dec 1</li>
+                  <li class="list-inline-item">.</li>
+                  <li class="list-inline-item">6 min read</li>
+                  <li class="list-inline-item">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://picsum.photos/id/12/400/250"
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+            </article>
+
+            <article class="row mb-3">
+              <div class="col-8">
+                <img
+                  class="rounded-circle"
+                  src="https://picsum.photos/id/13/25/25"
+                  alt=""
+                />
+                <span class="small ms-1">John Doe</span>
+                <h6 class="mt-2">
+                  <strong>Lorem ipsum dolor sit amet consectetur</strong>
+                </h6>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perferendis, quod? Voluptate non ducimus consequuntur.
+                </p>
+                <ul class="list-inline small">
+                  <li class="list-inline-item">Dec 1</li>
+                  <li class="list-inline-item">.</li>
+                  <li class="list-inline-item">6 min read</li>
+                  <li class="list-inline-item">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://picsum.photos/id/13/400/250"
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+            </article>
+
+            <article class="row mb-3">
+              <div class="col-8">
+                <img
+                  class="rounded-circle"
+                  src="https://picsum.photos/id/14/25/25"
+                  alt=""
+                />
+                <span class="small ms-1">John Doe</span>
+                <h6 class="mt-2">
+                  <strong>Lorem ipsum dolor sit amet consectetur</strong>
+                </h6>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perferendis, quod? Voluptate non ducimus consequuntur.
+                </p>
+                <ul class="list-inline small">
+                  <li class="list-inline-item">Dec 1</li>
+                  <li class="list-inline-item">.</li>
+                  <li class="list-inline-item">6 min read</li>
+                  <li class="list-inline-item">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://picsum.photos/id/14/400/250"
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+            </article>
+
+            <article class="row mb-3">
+              <div class="col-8">
+                <img
+                  class="rounded-circle"
+                  src="https://picsum.photos/id/15/25/25"
+                  alt=""
+                />
+                <span class="small ms-1">John Doe</span>
+                <h6 class="mt-2">
+                  <strong>Lorem ipsum dolor sit amet consectetur</strong>
+                </h6>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perferendis, quod? Voluptate non ducimus consequuntur.
+                </p>
+                <ul class="list-inline small">
+                  <li class="list-inline-item">Dec 1</li>
+                  <li class="list-inline-item">.</li>
+                  <li class="list-inline-item">6 min read</li>
+                  <li class="list-inline-item">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://picsum.photos/id/15/400/250"
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+            </article>
+          </section>
+
+          <aside class="col-sm-4">
+            <h6>
+              <small
+                ><strong>DISCOVER MORE OF WHAT MATTERS TO YOU</strong></small
+              >
+            </h6>
+            <ul class="list-inline">
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Lorem</a>
+              </li>
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Ipsum</a>
+              </li>
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Dolor</a>
+              </li>
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Lorem</a>
+              </li>
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Ipsum</a>
+              </li>
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Dolor</a>
+              </li>
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Lorem</a>
+              </li>
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Ipsum</a>
+              </li>
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Dolor</a>
+              </li>
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Lorem</a>
+              </li>
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Ipsum</a>
+              </li>
+              <li class="list-inline-item mb-2">
+                <a href="" class="btn btn-sm btn-outline-secondary">Dolor</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <!-- Section & Aside End -->
+
+    <!-- JavaScript -->
+    <!-- Bootstrap 5.3.3 Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
